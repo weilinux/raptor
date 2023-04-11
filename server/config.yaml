@@ -88,18 +88,18 @@ jwt:
 local:
   path: uploads/file
 mysql:
-  path: 192.168.209.128
+  path: 192.168.2.231
   port: "3306"
   config: charset=utf8mb4&parseTime=True&loc=Local
   db-name: raptor
   username: root
-  password: "123456"
+  password: "111000"
   max-idle-conns: 10
   max-open-conns: 100
   log-mode: error
   log-zap: false
 mysqlProd:
-  path: 192.168.209.128
+  path: 177.7.0.1
   port: "3306"
   config: charset=utf8mb4&parseTime=True&loc=Local
   db-name: raptor
@@ -130,8 +130,8 @@ qiniu:
   use-cdn-domains: false
 redis:
   db: 0
-  addr: 127.0.0.1:6379
-  password: ""
+  addr: 192.168.2.231:6379
+  password: "111000"
 system:
   env: public
   addr: 8888
